@@ -1,0 +1,58 @@
+#파이썬 주석처리
+# #%%를 통해 셀을 나누어 프로젝트 내부에서 각각의 코드를 진행 가능함
+# 자바와 달리 ;와 같은 콜론을 필요로 하지 않음
+
+#%%
+#숫자 자료형 Integer
+print(5)
+print(-10)
+print(3.14)
+print(1000)
+
+#연산 calculation
+print(5+3)
+print(2+8)
+print(3*(3+1))
+print(4/2)
+
+#%%
+#문자열 자료형 String
+print('this is string data')
+print("this is string data")
+print("this is long string data+++++++++++++++++++++++++++")
+#string data 내부에 연산자를 통해 여러번 반복 출력 진행도 가능함
+print("this code is print this string data"*9)
+
+#%%
+#참거짓 boolean
+print(5 > 10)
+print(5231 < 123)
+#true or false
+print(True)
+print(False)
+# true => false, false => true
+print(not True)
+print(not False)
+print(not (5>10))
+
+#%%
+#변수 variable
+name = "연탄이"
+animal = "강아지"
+age = 10
+hobby = "산책"
+is_adult = age >= 6
+
+# +를 통해 사용 시 int형을 출력을 원하면 무조건 str()를 통해 문자열로 변경시켜야 가능함
+print("이름은 : " + name)
+print("동물의 종은 : " + animal)
+print("나이는 : " + str(age))
+print("취마는 : " + hobby)
+print("성인인가? : " + str(is_adult))
+
+# ,로 연결 시 자료형 변경 없이 바로 사용가능 하지만 공백이 생긴다는 점이 특징
+print("이름은 :" , name)
+print("동물의 종은 :" , animal)
+print("나이는 :" , str(age))
+print("취마는 :" , hobby)
+print("성인인가? :" , str(is_adult))
