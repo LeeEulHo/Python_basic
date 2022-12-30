@@ -1,2 +1,2 @@
 # Python_basic
-start Python
+learning for Python
