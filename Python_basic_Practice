@@ -110,3 +110,5 @@ number = number + 2 #연산자로 +, -, /, % 모두 사용 가능
 print(number)
 
 #%%
+#레파지토리 수정작업 test
+#%%
