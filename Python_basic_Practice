@@ -110,3 +110,57 @@ number = number + 2 #연산자로 +, -, /, % 모두 사용 가능
 print(number)
 
 #%%
+# 숫자 처리 함수 (abs, pow, max, min, round) + 모듈 사용방법
+print(abs(-5)) # abs (절댓값)
+print(pow(4,2)) # pow (제곱) (소수점은 빼고 제곱값을 출력)
+print(min(5, 12)) # min (가장 작은 값)
+print(max(5, 12)) # max (가장 큰 값)
+print(round(3.14)) # round (반올림)
+print(round(4.99)) # round (반올림)
+
+# math 모듈 
+from math import * # (*를 import문에 입력하면 관련 모듈의 내용을 모두 불러와 사용하겠다는 의미이다.)
+# math 모듈의 숫자처리 (floor, cell, sqrt)
+
+print(floor(4.99)) # floor (내림)
+print(ceil(3.14)) # ceil (올림)
+print(sqrt(16)) # sqrt (제곱근 root)
+ 
+#%% 
+# random 랜덤함수 
+# 랜덤함수는 난수 생성, 확률성, 로또번호 등 여러 방식으로 사용이 가능하다.
+
+# 1. random 모듈 호출 (학습 과정에는 *로 모두 불러 사용해도 무관하지만 현업에서 사용시에는 필요한 모듈만 명확하게 사용할 것)
+from random import *
+
+# 2. random 랜덤함수 사용 예시 (따로의 값 지정 없이 사용 시 0.0 ~ 1.0 사이에서 생성된다)
+print(random()) 
+print(random(0)* 5)
+print(random() * 10)
+print(int(random() * 10)) # int형으로 감싸서 결과 값을 정수로 진행
+print(int(random() * 10) + 1) # 기존의 0 ~ 10 사이의 랜덤값에 1을 더하여 1 ~ 11 사이로 변경
+
+# 3. random 함수에 범위를 더한 함수들 (randrange, randint)
+print(randrange(1, 256)) # 범위 마지막 숫자 미포함
+print(randint(1,256)) # 범위 마지막 숫자 포함
+
+# ++) 랜덤함수를 통해 로또 번호 생성을 만들고자 할 경우에는 각각의 랜덤함수를 6개 만들면 번호는 나오지만 
+# 중복된 사건 즉 중복 숫자가 나올 가능성이 존재하기 때문에 이럴 경우에는 random 모둘 내의 simple() 함수를 사용하여 진행한다.
+
+#%%
+# 연습문제
+
+# 조건 1 = 랜덤으로 날짜를 뽑아야 함 (랜덤 모듈 호출)
+from random import *
+
+# 조건 2 = 월별 날짜는 다름을 감안하여 최소 일수인 28 이내로 정함 (randint 사용 시 28, randrange 사용 시 29로 설정)
+# 조건 3 = 매월 1~3일은 스터디 준비를 해야 함으로 제외
+
+date = randrange(4, 29)
+# date = randint(4, 28)
+
+print(" 오프라인 스터디 모임 날짜는 매월 " + str(date) + " 일로 선정되었습니다. ")
+# print(" 오프라인 스터디 모임 날짜는 매월 " + date + " 일로 선정되었습니다. ")
+
+#%%
+
