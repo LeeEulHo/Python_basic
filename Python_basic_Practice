@@ -135,7 +135,7 @@ from random import *
 
 # 2. random 랜덤함수 사용 예시 (따로의 값 지정 없이 사용 시 0.0 ~ 1.0 사이에서 생성된다)
 print(random()) 
-print(random(0)* 5)
+print(random()* 5)
 print(random() * 10)
 print(int(random() * 10)) # int형으로 감싸서 결과 값을 정수로 진행
 print(int(random() * 10) + 1) # 기존의 0 ~ 10 사이의 랜덤값에 1을 더하여 1 ~ 11 사이로 변경
@@ -163,4 +163,44 @@ print(" 오프라인 스터디 모임 날짜는 매월 " + str(date) + " 일로 
 # print(" 오프라인 스터디 모임 날짜는 매월 " + date + " 일로 선정되었습니다. ")
 
 #%%
+# String 문자열
+# 문자열은 문자들의 집합으로서 " ", '', ''' ''' 으로 묶어 사용이 가능하다
 
+string_sentence1 = "파이썬 문자열은 string 으로서 여러 문자들의 집합을 표현이 가능하다."
+string_sentence2 = '파이썬 문자열은 string 으로서 여러 문자들의 집합을 표현이 가능하다.'
+string_sentence3 = '''
+파이썬 문자열은 string 으로서 여러 문자들의 집합을 표현이 가능하다.
+파이썬 문자열은 string 으로서 여러 문자들의 집합을 표현이 가능하다.
+파이썬 문자열은 string 으로서 여러 문자들의 집합을 표현이 가능하다. '''
+
+print(string_sentence1)
+print(string_sentence2)
+print(string_sentence3)
+
+# %%
+# Variable index 변수 인덱스 (슬라이싱 Slicing)
+# 파이썬에서 data를 불러올 경우에 인덱스 형태를 통해 data에 번호를 붙여 필요할 경우 data[번호]를 통해
+# 필요한 데이터를 가져와 사용이 가능하다. ++) 인덱스의 값은 0부터 시작하기 때문에 0 1 2 3 4 5 순으로 카운팅 해야 한다.
+
+# 1. 변수명[인덱스] 구조
+eulho = "001207-323456"
+print("성별 : " + eulho[7])
+
+# 2. 변수명[시작인덱스:종료인덱스] (:콜론 사용)
+eulho = "001207-123456"
+print("연 : " + eulho[0:2])
+print("월 : " + eulho[2:4])
+print("일 : " + eulho[4:6])
+
+# 3. Slicing(슬라이싱) 변수명[:인덱스], 변수명[인덱스:], 변수명[:]
+eulho = "001207-123456"
+
+# 변수명[:인덱스] = 처음부터 인덱스 입력값 까지 슬라이싱
+print("생년월일 : " + eulho[:6])
+
+# 변수명[인덱스:] = 인덱스 입력값 부터 끝까지 슬라이싱
+print("뒤 7자리 : " + eulho[7:])
+
+# 변수명[:] = 처음부터 끝까지 슬라이싱
+print("주민번호 : " + eulho[:])
+# %%
