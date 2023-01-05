@@ -203,4 +203,61 @@ print("뒤 7자리 : " + eulho[7:])
 
 # 변수명[:] = 처음부터 끝까지 슬라이싱
 print("주민번호 : " + eulho[:])
-# %%
+
+#%%
+# Using String Options 문자열 처리 함수 (lower, upper, isupper, islower, replace, index, find, count)
+python_string = "Python is Amazing"
+
+# 1. lower (소문자로 변환) 
+print(python_string.lower())
+
+# 2. upper (대문자로 변환)
+print(python_string.upper())
+
+# 3. isupper (대문자인지 확인)
+print(python_string[0].isupper())
+# print(python_string.isupper()) 문자열 전체로 검사 가능
+
+# 4. islower (소문자인지 확인)
+print(python_string[0].islower())
+# print(python_string.islower()) 문자열 전체로 검사 가능
+
+# 5. replace (문자열 바꾸기)
+print(python_string.replace("Python","Java"))
+
+# 6. index (찾을려는 문자열의 인덱스(없으면 에러))
+index = python_string.index("n") # 처음으로 발견된 n의 인덱스
+print(index)
+
+index = python_string.index("n", index + 1) # 6번째 인덱스 이후의 발견된 n
+print(index)
+
+print(python_string.index("Java"))
+
+# 7. find (찾으려는 문자열의 인덱스(없으면 -1))
+find = python_string.index("n") # 처음으로 발견된 n의 인덱스
+print(find)
+
+find = python_string.index("n", index + 1) # 6 번째 인덱스 이후에 발견된 n의 인덱스
+print(find)
+
+print(python_string.find("Java"))
+
+# 8. count (문자열이 나온 횟수)
+print(python_string.count("n"))
+
+# ++) len (문자열의 전체 길이 (띄어쓰기 포함)) 
+# len은 문자열(string), 튜플(tuple), 리스트(list)에서 사용 가능하다. 
+print(len(python_string))
+
+#%%
+# String Format (문자열 포멧)
+
+# 1. %를 통한 문자열 삽입 (%d = (decimal)정수, %c = (character)문자, %s)
+# 
+#
+#
+
+# 2. .format
+
+# 3. 문자열 내부에 {변수명}으로 지정 후 .format(변수명 = 변환할 data값)
