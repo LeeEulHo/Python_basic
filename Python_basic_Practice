@@ -232,7 +232,7 @@ print(index)
 index = python_string.index("n", index + 1) # 6번째 인덱스 이후의 발견된 n
 print(index)
 
-print(python_string.index("Java"))
+# print(python_string.index("Java")) Java 값이 없으면 오류 발생
 
 # 7. find (찾으려는 문자열의 인덱스(없으면 -1))
 find = python_string.index("n") # 처음으로 발견된 n의 인덱스
@@ -241,7 +241,7 @@ print(find)
 find = python_string.index("n", index + 1) # 6 번째 인덱스 이후에 발견된 n의 인덱스
 print(find)
 
-print(python_string.find("Java"))
+print(python_string.find("Java")) # Java 값이 없으면 출력값 -1을 출력 후 다음 프로그램 진행
 
 # 8. count (문자열이 나온 횟수)
 print(python_string.count("n"))
