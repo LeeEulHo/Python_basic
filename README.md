@@ -12,7 +12,12 @@ Python Syntax -> Mathplotlib, Pandas, Pytorch -> Algorithm -> ML -> DL 순서로
 추가적으로 설명이 필요한 부분이나 정리할 내용에 대해서는 별도의 Blog를 통해서 포스팅 될 예정이니 참고하시길 바랍니다.
 
 This Project's object is learning Python syntax and all example to using DL, ML, Algorithm
-It will be planning to seqence Python Syntax -> Mathplotlib, Pandas, Pytorch -> Algorithm -> ML -> DL
+It will be planning to seqence 
+
+
+Python Syntax -> Mathplotlib, Pandas, Pytorch -> Algorithm -> ML -> DL
+
+
 Project will finallize in 2026 April.
 
 If need to additional explanation in this project section, i will post summary in Blog. thanks
