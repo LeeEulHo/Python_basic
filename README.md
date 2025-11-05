@@ -1,5 +1,5 @@
 # Python_basic
-해당 프로젝트는 DL, ML, Algorithm 학습을 위한 Python의 모든 document의 example을 담은 내용을 포함합니다.
+해당 프로젝트는 DL, ML, Algorithm 학습을 위한 Python의 모든 document의 example을 담은 내용을 포함합니다.\n
 Python Syntax -> Mathplotlib, Pandas, Pytorch -> Algorithm -> ML -> DL 순서로 Project가 구성될 예정이며
 2025 ~ 2026.4월 내로 Project의 계획은 마무리될 예정입니다.
 
