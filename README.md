@@ -2,7 +2,7 @@
 
 <h4>Python Syntax : SyntaxPractice.ipynb</h4>
 
-참조 내용 : https://www.w3schools.com/python/python_server.asp
+참고 자료 : https://www.w3schools.com/python/python_server.asp
 
 ---
 
