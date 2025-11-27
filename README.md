@@ -2,8 +2,8 @@
 
 <h4>Python Syntax : SyntaxPractice.ipynb</h4>
 
-참고 자료 : https://www.w3schools.com/python/python_server.asp
-
+참고 자료 : [https://www.w3schools.com/python/python_server.asp
+](https://www.w3schools.com/python/default.asp)
 ---
 
 해당 프로젝트는 DL, ML, Algorithm 학습을 위한 Python의 모든 document의 example을 담은 내용을 포함합니다.
